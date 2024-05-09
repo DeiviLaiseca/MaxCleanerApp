@@ -1,0 +1,168 @@
+{
+    "users": [{
+        "id": 1,
+        "usuario": "John Doe",
+        "email": "john.due@gmail.com"
+    }],
+    "products": [{
+            "id": "dc-batman",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "dc-superman",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "dc-flash",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "dc-green",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "dc-arrow",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "dc-wonder",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "dc-martian",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "dc-robin",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "dc-blue",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "dc-black",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "marvel-spider",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "marvel-captain",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "marvel-iron",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "marvel-thor",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "marvel-hulk",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "marvel-wolverine",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "marvel-daredevil",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "marvel-hawkeye",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "marvel-cyclops",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        },
+        {
+            "id": "marvel-silver",
+            "product": "Batman",
+            "mark": "DC Comics",
+            "price": "Bruce Wayne",
+            "details": "Detective Comics #27",
+            "characters": "Bruce Wayne"
+        }
+    ]
+}

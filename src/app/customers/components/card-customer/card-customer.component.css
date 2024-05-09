@@ -1,0 +1,7 @@
+button {
+    padding: 0px 30px 0px 30px;
+}
+
+mat-card-actions {
+    justify-content: center;
+}

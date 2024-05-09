@@ -1,0 +1,29 @@
+<div class="flex flex-column">
+
+    <mat-card class="p-5 card">
+
+        <span class="text-lg mb-4"><strong>Login</strong></span>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Usuario</mat-label>
+            <input type="text" matInput placeholder="Nombre de usuario">
+            <mat-icon matSuffix>face</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input type="password" matInput placeholder="Contraseña">
+            <mat-icon matSuffix>key</mat-icon>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary">
+      <mat-icon>login</mat-icon>
+      Ingresar
+    </button>
+
+        <div class="flex justify-content-end mt-5">
+            <a routerLink="/auth/register">¿Registra una cuenta?</a>
+        </div>
+    </mat-card>
+
+</div>

@@ -1,0 +1,17 @@
+<div>
+    <mat-card>
+        <mat-form-field appearance="outline" class="p-2">
+            <mat-label>Buscar producto</mat-label>
+            <input matInput type="text" [formControl]="searchInput" (input)="searchProduct()" [matAutocomplete]="auto" placeholder="Buscar producto">
+            <mat-icon matSuffix color="primary">travel_explore</mat-icon>
+            <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="onSelectOption( $event )">
+                <mat-option *ngFor="let product of products" [value]="product">
+                    {{ product.product }}
+                </mat-option>
+                <mat-option *ngIf="products.length === 0 && searchInput.value && searchInput.value.length > 0" value="">
+                    No se encuentró un producto con el nombre {{ searchInput.value }}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+    </mat-card>
+</div>

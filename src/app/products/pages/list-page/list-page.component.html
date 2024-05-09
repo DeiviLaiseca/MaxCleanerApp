@@ -1,0 +1,8 @@
+<H1><strong>Lista de productos - MaxCleaner</strong></H1>
+<mat-divider></mat-divider>
+<br>
+<div class="grid mb-8">
+    <div *ngFor="let product of products" class="col-12 sm:col-4 md:col-3 xl:col-2">
+        <product-card [products]="product"></product-card>
+    </div>
+</div>

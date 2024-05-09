@@ -1,0 +1,44 @@
+<ng-template #divloading>
+    <mat-grid-list cols="1">
+        <mat-grid-tile>
+            <mat-spinner></mat-spinner>
+        </mat-grid-tile>
+    </mat-grid-list>
+</ng-template>
+
+<div *ngIf="products; else divloading" class="grid p-2">
+    <mat-card class="col-12 sm:col-6">
+        <mat-card-header>
+            <div mat-card-avatar class="header-image"></div>
+            <mat-card-title>{{ products.product }}</mat-card-title>
+            <mat-card-subtitle>{{ products.mark }}</mat-card-subtitle>
+            <mat-card-subtitle>{{ products.price }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="products | productImage" [alt]="products.product">
+    </mat-card>
+    <mat-card class="col-12 sm:col-6">
+        <mat-card-content>
+            <p>
+                {{ products.details }} Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugit autem odit animi voluptatibus. Doloremque rerum tempora quam deleniti incidunt molestiae fugit ex minus commodi perspiciatis totam, possimus aspernatur illum.
+            </p>
+            <mat-divider></mat-divider>
+            <mat-list>
+                <mat-list-item>
+                    <mat-icon color="primary">check_circle</mat-icon> {{ products.characters }}</mat-list-item>
+                <mat-list-item>
+                    <mat-icon color="primary">check_circle</mat-icon> {{ products.characters }}</mat-list-item>
+                <mat-list-item>
+                    <mat-icon color="primary">check_circle</mat-icon> {{ products.characters }}</mat-list-item>
+                <mat-list-item>
+                    <mat-icon color="primary">check_circle</mat-icon> {{ products.characters }}</mat-list-item>
+                <mat-list-item>
+                    <mat-icon color="primary">check_circle</mat-icon> {{ products.characters }}</mat-list-item>
+            </mat-list>
+        </mat-card-content>
+        <mat-card-actions>
+            <button class="btn-bottom" mat-stroked-button color="primary" (click)="goBackList()"><mat-icon>undo</mat-icon>Ir a la lista</button>
+            <span class="spacer"></span>
+            <button class="btn-bottom" mat-stroked-button color="primary" (click)="goBackSearch()"><mat-icon>youtube_searched_for</mat-icon>Ir al buscador</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,50 @@
+<div class="grid p-1">
+    <div class="col-12 sm:col-6">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title><strong>Dirección de envío</strong></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image style="cursor: pointer;" src="" alt="">
+            <mat-radio-group class="col-12" aria-label="Select an option">
+                <mat-radio-button class="col-12" color="primary" value="1"><strong>Enviar a domicilio</strong></mat-radio-button>
+                <mat-form-field class="col-10" appearance="outline">
+                    <mat-label>Dirección de envío</mat-label>
+                    <input matInput placeholder="Ingresar dirección de envío">
+                    <mat-icon color="primary" matSuffix>home</mat-icon>
+                </mat-form-field>
+                <mat-radio-button class="col-12" color="primary" value="2"><strong>Retirar en punto de entrega</strong></mat-radio-button>
+            </mat-radio-group>
+
+            <mat-divider class="mb-2"></mat-divider>
+
+            <mat-card-content>
+                <mat-card-title>Método de pago</mat-card-title>
+                <mat-radio-group color="primary">
+                    <mat-radio-button value="pse"><strong>PSE</strong></mat-radio-button>
+                    <mat-radio-button value="tc"><strong>Tarjeta de crédito</strong></mat-radio-button>
+                    <mat-radio-button value="payCash"><strong>Punto de pago</strong></mat-radio-button>
+                </mat-radio-group>
+                <img class="imageMin" src="assets/metodos-de-pago.jpeg" alt="Tarjetas">
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+    <div class="col-12 sm:col-6">
+        <mat-card class="p-3">
+            <mat-card-title><strong>Resumen de compra</strong></mat-card-title>
+            <br>
+            <mat-card-subtitle>{{ products.product }}</mat-card-subtitle>
+            <img class="imageProductMin align-content-center" [src]="products | customerImage " alt="">
+            <mat-card-subtitle>Precio</mat-card-subtitle>
+            <mat-card-subtitle class="end">$xxx.xxx</mat-card-subtitle>
+            <mat-card-subtitle>Iva</mat-card-subtitle>
+            <mat-card-subtitle class="end">$xxx.xxx</mat-card-subtitle>
+            <mat-divider></mat-divider>
+            <mat-card-subtitle>Total</mat-card-subtitle>
+            <mat-card-subtitle class="end">$xxx.xxx</mat-card-subtitle>
+            <mat-card-actions>
+                <button mat-fab extended="" color="primary"><mat-icon>credit_card</mat-icon>Pagar</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
