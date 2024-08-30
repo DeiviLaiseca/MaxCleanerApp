@@ -1,5 +1,5 @@
 <div class="grid">
-    <div class="col-12 sm:col-6">
+    <form class="col-12 sm:col-6" [formGroup]="productForm" (ngSubmit)="onSubmit()">
         <mat-card class="p-3">
             <mat-card-header>
                 <div mat-card-avatar class="header-image"></div>
@@ -11,27 +11,27 @@
                 <div class="grid">
                     <mat-form-field class="col-12 sm:col-6" appearance="outline">
                         <mat-label>Marca</mat-label>
-                        <input matInput type="text" placeholder="Marca" required>
+                        <input matInput type="text" placeholder="Marca" formControlName="mark" required>
                         <mat-icon matSuffix color="primary">sell</mat-icon>
                     </mat-form-field>
                     <mat-form-field class="col-12 sm:col-6" appearance="outline">
                         <mat-label>Precio</mat-label>
-                        <input type="number" matInput placeholder="Marca" required>
+                        <input type="text" matInput placeholder="Precio" formControlName="price" required>
                         <mat-icon matSuffix color="primary">add_card</mat-icon>
                     </mat-form-field>
                     <mat-form-field class="col-12" appearance="outline">
                         <mat-label>Producto</mat-label>
-                        <input type="text" matInput placeholder="Producto" required>
+                        <input type="text" matInput placeholder="Producto" formControlName="product" required>
                         <mat-icon matSuffix color="primary">inventory_2</mat-icon>
                     </mat-form-field>
                     <mat-form-field class="col-12" appearance="outline">
                         <mat-label>Detalles</mat-label>
-                        <input type="text" matInput placeholder="Detalles" required>
+                        <input type="text" matInput placeholder="Detalles" formControlName="details" required>
                         <mat-icon matSuffix color="primary">description</mat-icon>
                     </mat-form-field>
                     <mat-form-field class="col-9" appearance="outline">
                         <mat-label>Características</mat-label>
-                        <input type="text" matInput placeholder="Características" required>
+                        <input type="text" matInput placeholder="Características" formControlName="characters" required>
                     </mat-form-field>
                     <span class="spacer"></span>
                     <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
@@ -39,20 +39,25 @@
                     </button>
                     <mat-form-field class="col-12" appearance="outline">
                         <mat-label>Promoción</mat-label>
-                        <input type="text" matInput placeholder="Promoción">
+                        <input type="text" matInput placeholder="Promoción" formControlName="promotion">
                         <mat-icon matSuffix color="primary">savings</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field class="col-12" appearance="outline">
+                        <mat-label>Imagen</mat-label>
+                        <input type="text" matInput placeholder="Imagen" formControlName="alt_img">
+                        <mat-icon matSuffix color="primary">image</mat-icon>
                     </mat-form-field>
                 </div>
             </mat-card-content>
             <div class="flex justify-content-between">
-                <button mat-fab extended color="primary"><mat-icon>save</mat-icon>Guardar</button>
-                <button mat-fab extended color="primary"><mat-icon>delete</mat-icon>Borrar</button>
+                <button mat-fab extended color="primary" type="submit"><mat-icon>save</mat-icon>Guardar</button>
+                <button mat-fab extended color="primary" *ngIf="currentProduct._id" (click)="onDeleteProduct()"><mat-icon>delete</mat-icon>Borrar</button>
             </div>
         </mat-card>
-    </div>
+    </form>
     <div class="col-12 sm:col-6">
         <mat-card class="p-3">
-            <img style="height: 600px;" mat-card-image src="assets/no-image.png" alt="Photo of a Shiba Inu">
+            <img style="height: 600px;" mat-card-image [src]="currentProduct | productImage" alt="Photo of a Shiba Inu">
         </mat-card>
     </div>
 </div>

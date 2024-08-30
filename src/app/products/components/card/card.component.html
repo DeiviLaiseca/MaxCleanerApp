@@ -12,8 +12,8 @@
         </p>
     </mat-card-content>
     <mat-card-actions>
-        <button mat-raised-button color="primary" [routerLink]="['/products/edit', products.id]"><mat-icon>edit_note</mat-icon>Editar</button>
+        <button mat-raised-button color="primary" [routerLink]="['/products/edit', products._id]"><mat-icon>edit_note</mat-icon>Editar</button>
         <span class="spacer"></span>
-        <button mat-raised-button color="primary" [routerLink]="['/products', products.id]"><mat-icon>manage_search</mat-icon>Ver</button>
+        <button mat-raised-button color="primary" [routerLink]="['/products', products._id]"><mat-icon>manage_search</mat-icon>Ver</button>
     </mat-card-actions>
 </mat-card>

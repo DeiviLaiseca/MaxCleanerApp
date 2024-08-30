@@ -37,7 +37,7 @@ export class SearchPageComponent {
       return;
     };
 
-    this.router.navigateByUrl(`products/${ event.option.value.id }`)
+    this.router.navigateByUrl(`products/${ event.option.value._id }`)
 
 
   }

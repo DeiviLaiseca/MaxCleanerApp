@@ -20,7 +20,7 @@ export class ProductPageComponent implements OnInit {
   ngOnInit(): void {
     this.activateRoute.params
     .pipe(
-      switchMap( ({id}) => this.productsService.getProductById( id ))
+      switchMap( ({_id}) => this.productsService.getProductById( _id ))
     )
     .subscribe( product => {
       if( !product ) return this.router.navigate(['/products/list']);

@@ -20,7 +20,7 @@ export class PayPageComponent {
   ngOnInit(): void {
     this.activateRoute.params
     .pipe(
-      switchMap( ({id}) => this.customerService.getProductsById( id ))
+      switchMap( ({_id}) => this.customerService.getProductsById( _id ))
     )
     .subscribe( product => {
 

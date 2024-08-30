@@ -12,6 +12,7 @@ import { NewProductPageComponent } from './pages/new-product-page/new-product-pa
 import { ProductImagePipe } from './pipes/product-image.pipe';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
+import { DialogoDeleteComponent } from './components/dialogo-delete/dialogo-delete.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
     ProductImagePipe,
     ProductPageComponent,
     SearchPageComponent,
+    DialogoDeleteComponent,
   ],
   imports: [
     CommonModule,

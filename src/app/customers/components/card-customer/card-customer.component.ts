@@ -18,7 +18,7 @@ export class CardCustomerComponent {
   }
 
   goToCart(): void {
-    this.router.navigateByUrl(`customer/cart/${ this.products.id }`)
+    this.router.navigateByUrl(`customer/cart/${ this.products._id }`)
   }
 
 }

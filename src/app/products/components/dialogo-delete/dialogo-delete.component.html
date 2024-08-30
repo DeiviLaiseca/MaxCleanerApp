@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>Eliminar producto</h2>
+<mat-dialog-content>
+    ¿Está seguro que desea eliminar el producto: {{ data.product }}?
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close (click)="onNoClick()" color="primary">No</button>
+    <button mat-button mat-dialog-close (click)="onConfirm()" cdkFocusInitial color="primary">Eliminar</button>
+</mat-dialog-actions>
